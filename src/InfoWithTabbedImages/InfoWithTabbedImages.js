@@ -65,8 +65,6 @@ const InfoWithTabbedImages = ({imageUrls}) => {
                         <Button>Learn More</Button>
                     </div>
                 </div>
-
-
             </Grid>
             <Grid size={4}>
                 <div className={'image-container'}>
