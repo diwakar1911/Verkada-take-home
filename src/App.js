@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import {useMemo} from "react";
+import InfoWithTabbedImages from "./InfoWithTabbedImages/InfoWithTabbedImages";
+import GalleryWithAccordion from "./GalleryWithAccordion/GalleryWithAccordion";
 
 function App() {
-  return (
+    const imageUrls = useMemo(() => [
+        '/images/image-1.png',
+        '/images/image-2.png',
+        '/images/image-3.png',
+    ], []);
+
+
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <section className={'section-1'}>
+            <InfoWithTabbedImages imageUrls={imageUrls} />
+        </section>
+        <section className={'section-2'}>
+            <GalleryWithAccordion />
+        </section>
+
     </div>
   );
 }
