@@ -35,14 +35,6 @@ const Tabs = ({ labels, onTabClick, activeTabIndex }) => {
                     >
                         {label}
                     </button>
-                    {/*{index === activeTabIndex && (*/}
-                    {/*    <div className="progress-bar-container">*/}
-                    {/*        <div*/}
-                    {/*            className="progress-bar"*/}
-                    {/*            style={{ height: `${progress}%` }}*/}
-                    {/*        ></div>*/}
-                    {/*    </div>*/}
-                    {/*)}*/}
                     {index === activeTabIndex ? (
                         <div
                             className="progress-bar"

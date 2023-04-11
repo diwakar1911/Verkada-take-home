@@ -49,7 +49,6 @@ const GalleryWithAccordion = () => {
             <GridContainer>
                 <Grid size={2} />
                 <Grid size={4}>
-
                     <ImageGallery imageUrls={imageUrls} />
                 </Grid>
                 <Grid size={4}>

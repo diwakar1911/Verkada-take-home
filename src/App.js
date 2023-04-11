@@ -9,17 +9,14 @@ function App() {
         '/images/image-3.png',
     ];
 
-
     return (
     <div className="App">
-
         <section className={'section-1'}>
             <InfoWithTabbedImages imageUrls={imageUrls} />
         </section>
         <section className={'section-2'}>
             <GalleryWithAccordion />
         </section>
-
     </div>
   );
 }
