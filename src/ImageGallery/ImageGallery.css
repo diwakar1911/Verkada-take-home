@@ -1,0 +1,31 @@
+.image-galley-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.image-column {
+    width: 50%;
+}
+
+.rectangle-image {
+    display: block;
+    width: 100%;
+}
+
+.square-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-image {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.rounded-image {
+    border-radius: 8px;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import './grid.css';
+import './Grid.css';
 
-const GridContainer = ({ children }) => (
-    <div className="container">
+const GridContainer = ({ children, style }) => (
+    <div className="container" style={{...style}}>
         {children}
     </div>
 );

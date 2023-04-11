@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './tabs.css';
+import './Tabs.css';
 
 const Tabs = ({ labels, onTabClick, activeTabIndex }) => {
     const [progress, setProgress] = useState(0);

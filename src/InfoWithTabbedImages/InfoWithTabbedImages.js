@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {Grid, GridContainer} from "../Grid/grid";
-import Button from "../Button/button";
-import Tabs from "../Tabs/tabs";
+import {Grid, GridContainer} from "../Grid/Grid";
+import Button from "../Button/Button";
+import Tabs from "../Tabs/Tabs";
 import './InfoWithTabbedImages.css';
 
 

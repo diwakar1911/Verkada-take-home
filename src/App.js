@@ -1,15 +1,13 @@
 import './App.css';
-import {useMemo} from "react";
 import InfoWithTabbedImages from "./InfoWithTabbedImages/InfoWithTabbedImages";
 import GalleryWithAccordion from "./GalleryWithAccordion/GalleryWithAccordion";
 
 function App() {
-    const imageUrls = useMemo(() => [
+    const imageUrls = [
         '/images/image-1.png',
         '/images/image-2.png',
         '/images/image-3.png',
-    ], []);
-
+    ];
 
 
     return (
