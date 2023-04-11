@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/verkada-take-home/static/css/main.4093a999.css",
+    "main.js": "/verkada-take-home/static/js/main.642321f1.js",
+    "static/js/787.1d078bb1.chunk.js": "/verkada-take-home/static/js/787.1d078bb1.chunk.js",
+    "index.html": "/verkada-take-home/index.html",
+    "main.4093a999.css.map": "/verkada-take-home/static/css/main.4093a999.css.map",
+    "main.642321f1.js.map": "/verkada-take-home/static/js/main.642321f1.js.map",
+    "787.1d078bb1.chunk.js.map": "/verkada-take-home/static/js/787.1d078bb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4093a999.css",
+    "static/js/main.642321f1.js"
+  ]
+}
