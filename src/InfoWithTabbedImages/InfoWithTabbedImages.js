@@ -9,10 +9,29 @@ const InfoWithTabbedImages = ({imageUrls}) => {
 
     const [currentImage, setCurrentImage] = useState(imageUrls[0]);
     const [currentTab, setCurrentTab] = useState(0);
+    const [intervalId, setIntervalId] = useState(null);
 
     const handleTabClick = (index) => {
+        if (index === currentTab) {
+            // Do nothing if the clicked tab is the same as the current tab
+            return;
+        }
+
         setCurrentTab(index);
         setCurrentImage(imageUrls[index]);
+
+        // Clear the existing interval
+        clearInterval(intervalId);
+
+        // Restart the interval
+        const newIntervalId = setInterval(() => {
+            setCurrentTab((prevTab) => {
+                const newTab = (prevTab + 1) % imageUrls.length;
+                setCurrentImage(imageUrls[newTab]);
+                return newTab;
+            });
+        }, 3000); // Change the interval duration (in milliseconds) as needed
+        setIntervalId(newIntervalId);
     };
 
     useEffect(() => {
@@ -23,6 +42,8 @@ const InfoWithTabbedImages = ({imageUrls}) => {
                 return newTab;
             });
         }, 3000); // Change the interval duration (in milliseconds) as needed
+
+        setIntervalId(interval);
 
         return () => {
             clearInterval(interval);
