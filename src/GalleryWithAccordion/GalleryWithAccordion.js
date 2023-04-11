@@ -8,9 +8,9 @@ import Accordion from "../Accordion/Accordion";
 
 const GalleryWithAccordion = () => {
     const imageUrls = [
-        "/images/rectangle-image.png",
-        "/images/square-image-1.png",
-        "/images/square-image-2.png"
+        `${process.env.PUBLIC_URL}/images/rectangle-image.png`,
+        `${process.env.PUBLIC_URL}/images/square-image-1.png`,
+        `${process.env.PUBLIC_URL}/images/square-image-2.png`,
     ];
 
     const accordion = [

@@ -17,7 +17,7 @@ const Accordion = ({ accordionData }) => {
                     className={`title ${isActive ? 'active' : 'inactive'}`}
                     onClick={() => onTitleClick(index)}
                 >
-                    {isActive && <img src="/icons/icon-active.svg" className={"accordion-active-icon"} alt="arrow"/>}
+                    {isActive && <img src={`${process.env.PUBLIC_URL}/icons/icon-active.svg`} className={"accordion-active-icon"} alt="arrow"/>}
                     {item.heading}
                     <span className="toggle-icon">{isActive ? '-' : '+'}</span>
                 </div>
